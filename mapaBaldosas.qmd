@@ -1,0 +1,3 @@
+# El mapa de baldosas
+
+Es lo que en inglés se conoce como "tile maps".

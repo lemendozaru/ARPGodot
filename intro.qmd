@@ -1,5 +1,27 @@
-# Introduction
+# Introducción
 
-This is a book created from markdown and executable code.
+Crear un juego de RPG no es tarea fácil y definitivamente no es el primer género que yo animaría realizar a alguien que quiere comenzar. La cantidad de trabajo que se debe realizar, hablando de aspectos puramente técnicos, es bastante considerable. Por mencionar algunos puntos que debemos hacer, los enlisto:
 
-See @knuth84 for additional discussion of literate programming.
+- Personajes, incluyendo el jugador (o los jugadores) y los enemigos. Aumentemos la cantidad si queremos agregar NPCs.
+- Un sistema modular de armamento para combate cuerpo a cuerpo y/o a distancia.
+- La interfaz de usuario y barras de vida.
+- Un sistema de gestión del audio.
+- El diseño y creación de los escenarios.
+
+Y ahora los defino mejor:
+
+Personajes
+: También los vamos a llamar "Caracteres" de vez en cuando. Para desarrollarlos de una manera que considero más o menos decente, crearemos una *clase* en el sentido informático de la palabra. Esta clase genérica la reutilizaremos, por lo que definiremos en ella funcionalidades básicas como la vida, los movimientos y la capacidad de recibir daño.
+
+Armas
+: Debemos diseñar el sistema de armamento de manera que podamos utilizar cualquier arma, tanto en el jugador como en los enemigos sin mucho trabajo de por medio. Este sistema debe gestionar acciones como equipar y desequipar armas, además de controlar la vida útil de estas. También debe permitirnos el utilizar escudos, armas a distancia y cuerpo a cuerpo.
+
+Barras de vida
+: Elementos de Interfaz de Usuario (IU en delante) que informarán al jugador sobre la salud propia y de los enemigos. Debemos mostrarla encima de cada caracter y debe actualizarse en tiempo real cuando haya cambios en ella.
+
+Gestión del audio
+: Deberemos crear un sistema persistente de sonidos que evite los cortes de audio aunque la fuente del mismo haya sido derrotado o borrado del juego.
+
+El escenario
+: Aquí debemos poner énfasis en la experiencia del jugador, ya que debemos colocar estratégicamente los enemigos para darle una experiencia retadora al jugador. También debemos pensar en incluir elementos clásicos, como el botín de enemigos caídos, transición entre los niveles y combates contra jefes.
+

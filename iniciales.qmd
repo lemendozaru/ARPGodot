@@ -1,0 +1,30 @@
+# Configuración del proyecto
+
+Lo primero que haremos será estructurar nuestro proyecto, creando las carpetas necesarias para almacenar de manera ordenada todos los elementos del juego.
+
+::: {.callout-note}
+## Información
+Toda referencia a valores de propiedades, a código y a nombres de archivos o carpetas se escribirá en formato `monoespaciado`. Los nombres de elementos, secciones y propiedades dentro de la interfaz gráfica de Godot se escribirá en formato *Cursivo*. Toda combinación de teclas se escribirá en formato {{<kbd Tecla>}}.
+:::
+
+## Creando la estructura básica
+
+En el sistema de archivos de Godot crearemos dos carpetas, una la llamaremos `programas` y contendrá el código que vayamos desarrollando. Mientras que la segunda se llamará `escenas` y ahí estaremos guardando los elementos que vayamos creando dentro del motor.
+
+Después, en el navegador de archivos de nuestra computadora descomprimimos la carpeta, previamente descargada, llamada `assets` y la abrimos. En su interior tenemos dos carpetas más: `sonidos` y `visuales`. Estas carpetas contienen varios archivos que de entrada, no podemos visualizar ni saber qué son. Sin cuidado, son imágenes y archivos de sonido que ya están en un formato que Godot conoce. Bueno, ambas las arrastraremos al sistema de archivos de Godot y este las importará automáticamente.
+
+## Creando la escena principal
+
+En el panel *Escena* daremos clic al botón *Escena 2D* y al único elemento que permanecerá ahí lo renombramos como `Principal`. Presionamos la combinación {{<kbd Ctrl+S>}} para guardar la escena y lo haremos como `mundo.tscn` en su respectiva carpeta.
+
+::: {.callout-note}
+## Información
+Por convención, en Godot se nombra a los nodos con mayúscula inicial: `MayúsculaInicial` para cada parte del nombre y en minúsculas con guiones bajos a funciones, archivos y variables: `primera_variable`.
+:::
+
+Estableceremos nuestra única escena como la principal, dando clic derecho en su pestaña (está encima de la *Vista 2D* o *Viewport*) y escogeremos *Establecer como Escena Principal*.
+
+## Ajustando la resolución del proyecto
+
+Entraremos a la configuración del proyecto y nos dirigimos a la pestaña *General*. Bajaremos un poco a la categoría *Visualización* y damos clic en la sección *Ventana*. Cambiaremos el ancho y el alto de la vista a `1280` por `720`, respectivamente. Esto le dará a nuestro juego una resolución de **720p**. Cerramos la ventana actual, los cambios se guardan automáticamente. Listo, ya hemos hecho los ajustes básicos.
+
