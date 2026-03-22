@@ -1,5 +1,7 @@
-# Preface {.unnumbered}
+# Prefacio {.unnumbered}
 
-This is a Quarto book.
+Este documento no pretende ser un manual detallado sobre el desarrollo de un juego de RPG de acción. Lo que pretende es ser un conjunto de apuntes que registre el proceso seguido para armar uno de estos juegos, en un nivel básico.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+El desarrollo de videojuegos no es fácil, pero puede aligerarse un poco si se documenta cada paso exitoso y, ¿por qué no? también los errores.
+
+En cuanto al motor Godot pues, escribir un libro sobre cualquier paquete informático puede complicarse bastante si este es de naturaleza abierta (*open source*), ya que normalmente evolucionan y cambian mucho conforme pasa el tiempo. Sin embargo, la idea es mantenerlo actualizado, que evolucione a la par. Es la única manera de pretender sostener su razón de ser. Y sí, lo estuve escribiendo al mismo tiempo que el de los Metroidvania, así que varias cosas serán recicladas de allá, nada grave, supongo. Dicho lo dicho, al grano. Vamos por ese RPG.
